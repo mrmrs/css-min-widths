@@ -1,0 +1,29 @@
+{
+  "name": "css-min-widths",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-min-widths",
+  "description": "Css module of single purpose classes for min widths",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-min-widths": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-min-widths.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
