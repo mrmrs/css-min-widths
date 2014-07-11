@@ -24,21 +24,21 @@ or download the css on github and include in your project.
 .mn-wi-fit  { min-width: fit-content; }
 .mn-wi-fill { min-width: fill-available; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .mn-wi-max-ns  { min-width: max-content; }
   .mn-wi-min-ns  { min-width: min-content; }
   .mn-wi-fit-ns  { min-width: fit-content; }
   .mn-wi-fill-ns { min-width: fill-available; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .mn-wi-max-m  { min-width: max-content; }
   .mn-wi-min-m  { min-width: min-content; }
   .mn-wi-fit-m  { min-width: fit-content; }
   .mn-wi-fill-m { min-width: fill-available; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .mn-wi-max-l  { min-width: max-content; }
   .mn-wi-min-l  { min-width: min-content; }
   .mn-wi-fit-l  { min-width: fit-content; }
