@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-min-widths
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-min-widths)
+
 
 ## File Size
 
+870B min-widths.css
+706B min-widths.min.css
 
 ## The Code
 ```
