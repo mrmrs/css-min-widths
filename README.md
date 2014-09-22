@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-min-widths)
 ## File Size
 
 870B min-widths.css
-706B min-widths.min.css
+706B min-widths.min.css 
+183B minified and gzipped
 
 ## The Code
 ```
