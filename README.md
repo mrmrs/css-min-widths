@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-min-widths)
 ## File Size
 
 870B min-widths.css
-706B min-widths.min.css 
+706B min-widths.min.css
 183B minified and gzipped
 
 ## The Code
@@ -62,7 +62,7 @@ View on [npm](https://www.npmjs.org/package/css-min-widths)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
