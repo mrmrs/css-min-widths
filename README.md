@@ -1,84 +1,102 @@
-# CSS MIN WIDTHS
+# css-min-widths 0.0.6
 
-  Mobile-first classes for css-min-widths.
-  Set the desired css-min-widths on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
+Css module of single purpose classes for min widths
 
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+#### Stats
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+206 | 16 | 16
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-min-widths
 ```
-View on [npm](https://www.npmjs.org/package/css-min-widths)
 
+#### With Git
 
-## File Size
-
-870B min-widths.css
-706B min-widths.min.css
-183B minified and gzipped
-
-## The Code
 ```
-.mn-wi-max  { min-width: max-content; }
-.mn-wi-min  { min-width: min-content; }
-.mn-wi-fit  { min-width: fit-content; }
+git clone https://github.com/tachyons-css/css-min-widths
+```
+
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-min-widths";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-min-widths">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   MIN WIDTHS
+*/
+.mn-wi-max { min-width: max-content; }
+.mn-wi-min { min-width: min-content; }
+.mn-wi-fit { min-width: fit-content; }
 .mn-wi-fill { min-width: fill-available; }
-
 @media screen and (min-width: 48em) {
-  .mn-wi-max-ns  { min-width: max-content; }
-  .mn-wi-min-ns  { min-width: min-content; }
-  .mn-wi-fit-ns  { min-width: fit-content; }
-  .mn-wi-fill-ns { min-width: fill-available; }
+ .mn-wi-max-ns { min-width: max-content; }
+ .mn-wi-min-ns { min-width: min-content; }
+ .mn-wi-fit-ns { min-width: fit-content; }
+ .mn-wi-fill-ns { min-width: fill-available; }
 }
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .mn-wi-max-m  { min-width: max-content; }
-  .mn-wi-min-m  { min-width: min-content; }
-  .mn-wi-fit-m  { min-width: fit-content; }
-  .mn-wi-fill-m { min-width: fill-available; }
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .mn-wi-max-m { min-width: max-content; }
+ .mn-wi-min-m { min-width: min-content; }
+ .mn-wi-fit-m { min-width: fit-content; }
+ .mn-wi-fill-m { min-width: fill-available; }
 }
-
-@media screen and (min-width: 64em)  {
-  .mn-wi-max-l  { min-width: max-content; }
-  .mn-wi-min-l  { min-width: min-content; }
-  .mn-wi-fit-l  { min-width: fit-content; }
-  .mn-wi-fill-l { min-width: fill-available; }
+@media screen and (min-width: 64em) {
+ .mn-wi-max-l { min-width: max-content; }
+ .mn-wi-min-l { min-width: min-content; }
+ .mn-wi-fit-l { min-width: fit-content; }
+ .mn-wi-fill-l { min-width: fill-available; }
 }
-
 ```
 
-## Author
+## Contributing
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
