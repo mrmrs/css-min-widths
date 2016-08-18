@@ -1,7 +1,7 @@
 {
   "name": "css-min-widths",
   "style": "min-widths.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://github.com/mrmrs/css-min-widths",
   "description": "Css module of single purpose classes for min widths",
   "keywords": [
