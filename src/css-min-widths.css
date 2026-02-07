@@ -8,10 +8,10 @@
 .mn-wi-fill { min-width: fill-available; }
 
 @media screen and (min-width: 48em) {
-  .mn-wi-max-ns  { min-width: max-content; }
-  .mn-wi-min-ns  { min-width: min-content; }
-  .mn-wi-fit-ns  { min-width: fit-content; }
-  .mn-wi-fill-ns { min-width: fill-available; }
+  .mn-wi-max-s  { min-width: max-content; }
+  .mn-wi-min-s  { min-width: min-content; }
+  .mn-wi-fit-s  { min-width: fit-content; }
+  .mn-wi-fill-s { min-width: fill-available; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
