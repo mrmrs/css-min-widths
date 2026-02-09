@@ -1,38 +1,44 @@
 {
   "name": "css-min-widths",
-  "style": "min-widths.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-min-widths",
-  "description": "Css module of single purpose classes for min widths",
+  "version": "2.0.0",
+  "description": "Functional CSS for min-widths",
+  "style": "dist/min-widths.css",
+  "main": "dist/min-widths.css",
+  "exports": {
+    ".": "./dist/min-widths.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "min-widths"
+    "min-widths",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-min-widths": {
+  "homepage": "https://github.com/mrmrs/css-min-widths",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-min-widths.git"
+    "url": "https://github.com/mrmrs/css-min-widths.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-min-widths/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-min-widths/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
