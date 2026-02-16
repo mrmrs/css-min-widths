@@ -1,101 +1,84 @@
-# css-min-widths 0.0.6
+# css-min-widths
 
-Css module of single purpose classes for min widths
+Functional CSS for min-widths
 
-#### Stats
+## Filesize
 
-206 | 16 | 16
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/min-widths.css` | 897 bytes |
+| `dist/min-widths.min.css` | 667 bytes (170 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-min-widths
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-min-widths
+```sh
+npm install css-min-widths
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-min-widths";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-min-widths">
+<link rel="stylesheet" href="https://unpkg.com/css-min-widths/dist/min-widths.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   MIN WIDTHS
-*/
-.mn-wi-max { min-width: max-content; }
-.mn-wi-min { min-width: min-content; }
-.mn-wi-fit { min-width: fit-content; }
-.mn-wi-fill { min-width: fill-available; }
-@media screen and (min-width: 48em) {
- .mn-wi-max-ns { min-width: max-content; }
- .mn-wi-min-ns { min-width: min-content; }
- .mn-wi-fit-ns { min-width: fit-content; }
- .mn-wi-fill-ns { min-width: fill-available; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .mn-wi-max-m { min-width: max-content; }
- .mn-wi-min-m { min-width: min-content; }
- .mn-wi-fit-m { min-width: fit-content; }
- .mn-wi-fill-m { min-width: fill-available; }
-}
-@media screen and (min-width: 64em) {
- .mn-wi-max-l { min-width: max-content; }
- .mn-wi-min-l { min-width: min-content; }
- .mn-wi-fit-l { min-width: fit-content; }
- .mn-wi-fill-l { min-width: fill-available; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-min-widths/dist/min-widths.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.mn-wi-max` | `min-width: max-content;` |
+| `.mn-wi-min` | `min-width: min-content;` |
+| `.mn-wi-fit` | `min-width: fit-content;` |
+| `.mn-wi-fill` | `min-width: fill-available;` |
+| `.mn-wi-max-s` | `min-width: max-content;` |
+| `.mn-wi-min-s` | `min-width: min-content;` |
+| `.mn-wi-fit-s` | `min-width: fit-content;` |
+| `.mn-wi-fill-s` | `min-width: fill-available;` |
+| `.mn-wi-max-m` | `min-width: max-content;` |
+| `.mn-wi-min-m` | `min-width: min-content;` |
+| `.mn-wi-fit-m` | `min-width: fit-content;` |
+| `.mn-wi-fill-m` | `min-width: fill-available;` |
+| `.mn-wi-max-l` | `min-width: max-content;` |
+| `.mn-wi-min-l` | `min-width: min-content;` |
+| `.mn-wi-fit-l` | `min-width: fit-content;` |
+| `.mn-wi-fill-l` | `min-width: fill-available;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.mn-wi-max-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/min-widths.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/min-widths.css` — formatted
+- `dist/min-widths.min.css` — minified
 
 ## License
 
-ISC
+MIT
